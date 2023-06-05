@@ -4,4 +4,6 @@
   display: grid;
   gap: 1rem;
   padding: $card-body-padding;
+  background-color: clr(primary, 100);
+  width: min-content;
 }

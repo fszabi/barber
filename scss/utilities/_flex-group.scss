@@ -6,8 +6,16 @@
   column-gap: var(--flex-column-gap, $flex-group-gap);
   row-gap: var(--flex-row-gap, $flex-group-gap);
   width: fit-content;
-}
 
-.flex-group.mx-auto {
-  justify-content: center;
+  &.mx-auto {
+    justify-content: center;
+  }
+
+  &.no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  &.flex-col {
+    flex-direction: column;
+  }
 }

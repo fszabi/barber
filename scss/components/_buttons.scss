@@ -17,18 +17,18 @@
   transition: 250ms;
 
   &--primary {
-    background-color: clr(accent, 400);
-
-    &:is(:hover, :focus) {
-      background-color: clr(accent, 500);
-    }
-  }
-
-  &--accent {
     background-color: clr(primary, 700);
 
     &:is(:hover, :focus) {
       background-color: clr(primary, 900);
+    }
+  }
+
+  &--accent {
+    background-color: clr(accent, 400);
+
+    &:is(:hover, :focus) {
+      background-color: clr(accent, 500);
     }
   }
 
@@ -45,12 +45,16 @@
     background: 0;
     padding: 0;
     font-size: fs(800);
-    color: clr(primary, 400); 
-    transition: visibility 250ms, opacity 250ms;
+    color: clr(accent, 400); 
+    transition: visibility 250ms, opacity 250ms, color 250ms;
+
+    &:hover {
+      color: clr(accent, 500); 
+    }
 
     &.visible {
       visibility: visible;
-      opacity: 0.7;
+      opacity: 1;
     }
   }
 }

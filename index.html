@@ -51,12 +51,198 @@
   </head>
   <body>
     <header class="primary-header">
-      <nav></nav>
+      <div class="container flex-group align-center justify-between">
+        <img class="logo" src="assets/logo.svg" alt="barber logo" />
+
+        <nav class="primary-navigation-container">
+          <ul id="primary-navigation" class="primary-navigation flex-group">
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#prices">Prices</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main></main>
-    <footer>
+    <main>
+      <section class="hero | text-center">
+        <div class="container flow" data-spacing="large">
+          <h1 class="fs-900 ff-accent text-uppercase clr-accent-400">
+            The Shop
+          </h1>
+          <p class="">
+            Established over a decade ago,
+            <span class="fw-700">The Barber Shop</span> is here to serve you're
+            hair needs, whatever they are. From a simple cut, a beard trim or a
+            hot towel shave, we're here to help you with.
+          </p>
+
+          <div class="flex-group mx-auto">
+            <a href="#book" class="btn btn--accent">Book appointment</a>
+            <a href="#prices" class="btn btn--primary">View Prices</a>
+          </div>
+
+          <picture class="flex-group mx-auto">
+            <source srcset="assets/hair-cut.webp" type="image/webp" />
+            <img
+              class="border-radius-1 box-shadow-2"
+              src="assets/hair-cut.jpg"
+              alt=""
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="section | bg-primary-200 text-center">
+        <div class="container flow">
+          <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
+            Our Services
+          </h2>
+
+          <div class="even-columns col-3 justify-center align-center">
+            <div class="card">
+              <h3 class="ff-accent text-uppercase">Hair Cutting</h3>
+            </div>
+            <div class="card">
+              <h3 class="ff-accent text-uppercase">Hot Shaves</h3>
+            </div>
+            <div class="card">
+              <h3 class="ff-accent text-uppercase">Beard Cleanup</h3>
+            </div>
+            <div class="card">
+              <h3 class="ff-accent text-uppercase">Hair Coloring</h3>
+            </div>
+            <div class="card">
+              <h3 class="ff-accent text-uppercase">Kids</h3>
+            </div>
+            <div class="card">
+              <h3 class="ff-accent text-uppercase">Products</h3>
+            </div>
+          </div>
+
+          <div class="flex-group mx-auto">
+            <a href="#book" class="btn btn--accent">Book appointment</a>
+          </div>
+        </div>
+      </section>
+      <section class="section | bg-primary-100 text-center">
+        <div class="container flow">
+          <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">Hours</h2>
+
+          <p>Open 7 days a week to serve your hair cutting needs</p>
+
+          <div class="even-columns">
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
+                Mon
+              </h3>
+              <p class="fs-500">9:00 - 18:00</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
+                Tue
+              </h3>
+              <p class="fs-500">9:00 - 18:00</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
+                Wed
+              </h3>
+              <p class="fs-500">9:00 - 18:00</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
+                Thu
+              </h3>
+              <p class="fs-500">9:00 - 18:00</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
+                Fri
+              </h3>
+              <p class="fs-500">9:00 - 21:00</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
+                Mon
+              </h3>
+              <p class="fs-500">10:00 - 21:00</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
+                Mon
+              </h3>
+              <p class="fs-500">10:00 - 18:00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section | bg-primary-200 text-center">
+        <div class="container flow">
+          <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
+            Pricing
+          </h2>
+
+          <div class="even-columns col-2 justify-center align-center">
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+                Adult Cut
+              </h3>
+              <p class="ff-accent fs-500 fw-700">$25</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+                Beard Trim
+              </h3>
+              <p class="ff-accent fs-500 fw-700">$25</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+                Kid Cut
+              </h3>
+              <p class="ff-accent fs-500 fw-700">$21</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+                Hot Towel Shave
+              </h3>
+              <p class="ff-accent fs-500 fw-700">$15</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+                Cut (jel) Wash
+              </h3>
+              <p class="ff-accent fs-500 fw-700">$35</p>
+            </div>
+            <div class="flex-group flex-col">
+              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+                Head (jel) Beard
+              </h3>
+              <p class="ff-accent fs-500 fw-700">$45</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section | bg-primary-100 text-center">
+        <div class="container flow">
+          <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
+            Book an Appointment
+          </h2>
+          <p>Please fill out the form below to book your appointment</p>
+
+          <div class="flex-group mx-auto">
+            <a href="#book" class="btn btn--accent">Book appointment</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="primary-footer">
+      <div class="container flow">
+        <img class="logo mx-auto" src="assets/logo.svg" alt="barber logo" />
+
+        <p>Here to serve your hair needs, whatever they might be</p>
+        <p class="ff-accent">514-555-1234</p>
+      </div>
       <button class="btn btn--scroll-top">
-        <i class="fa-solid fa-circle-arrow-up"></i>
+        <i class="fa-solid fa-square-caret-up"></i>
         <span class="visually-hidden"> Görgetés az oldal tetejére </span>
       </button>
     </footer>
