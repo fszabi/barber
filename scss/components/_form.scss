@@ -22,6 +22,8 @@ input, textarea, select, button {
 }
 
 label, input {
+  display: block;
+  width: 100%;
   font-size: fs(300);
 }
 
@@ -31,11 +33,23 @@ label {
 }
 
 input {
-  border-color: clr(primary, 300);
+  border: 3px solid clr(primary, 200);
+  border-radius: 10px;
+  padding: .75rem .5rem;
   color: clr(primary, 700);
   font-weight: $fw-600;
+  transition: border-color 250ms;
 
   &:focus {
-    border-color: clr(accent, 500);
+    border-color: clr(accent, 400);
+    outline: 0;
+  }
+}
+
+.submit {
+  margin-inline: auto;
+
+  @include mqMin(medium) {
+    margin-right: 0;
   }
 }

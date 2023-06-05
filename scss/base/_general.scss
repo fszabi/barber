@@ -17,7 +17,7 @@ body {
 
 ::-webkit-scrollbar {
   width: size(8);
-  background-color: clr(neutral, 100);
+  background-color: clr(primary, 100);
 }
 
 ::-webkit-scrollbar-track {
@@ -29,9 +29,9 @@ body {
   border-radius: 100vw;
 }
 
-@supports (scrollbar-color: clr(accent, 400) clr(neutral, 100)) {
+@supports (scrollbar-color: clr(accent, 400) clr(primary, 100)) {
   * {
-    scrollbar-color: clr(accent, 400) clr(neutral, 100);
+    scrollbar-color: clr(accent, 400) clr(primary, 100);
     scrollbar-width: thin;
   }
 }

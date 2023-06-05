@@ -51,11 +51,17 @@
   </head>
   <body>
     <header class="primary-header">
-      <div class="container flex-group align-center justify-between">
+      <div
+        class="container flex-group align-center justify-between"
+        data-type="wide"
+      >
         <img class="logo" src="assets/logo.svg" alt="barber logo" />
 
         <nav class="primary-navigation-container">
-          <ul id="primary-navigation" class="primary-navigation flex-group">
+          <ul
+            id="primary-navigation"
+            class="primary-navigation flex-group no-wrap"
+          >
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#hours">Hours</a></li>
             <li><a href="#prices">Prices</a></li>
@@ -65,9 +71,9 @@
     </header>
     <main>
       <section class="hero | text-center">
-        <div class="container flow" data-spacing="large">
+        <div class="container flow" data-spacing="large" data-type="wide">
           <h1 class="fs-900 ff-accent text-uppercase clr-accent-400">
-            The Shop
+            The Barber Shop
           </h1>
           <p class="">
             Established over a decade ago,
@@ -91,30 +97,44 @@
           </picture>
         </div>
       </section>
-      <section class="section | bg-primary-200 text-center">
-        <div class="container flow">
+      <section id="about-us" class="section | bg-primary-200 text-center">
+        <div class="container flow" data-type="wide">
           <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
             Our Services
           </h2>
 
-          <div class="even-columns col-3 justify-center align-center">
-            <div class="card">
+          <div class="even-columns col-3">
+            <div class="card | padding-32 bg-primary-100 border-radius-1">
               <h3 class="ff-accent text-uppercase">Hair Cutting</h3>
+              <p>
+                A quick clean up or a totally new style, we have you covered.
+              </p>
             </div>
-            <div class="card">
+            <div class="card | padding-32 bg-primary-100 border-radius-1">
               <h3 class="ff-accent text-uppercase">Hot Shaves</h3>
+              <p>
+                There is no better way to pamper yourself than to have a hot
+                shave.
+              </p>
             </div>
-            <div class="card">
+            <div class="card | padding-32 bg-primary-100 border-radius-1">
               <h3 class="ff-accent text-uppercase">Beard Cleanup</h3>
+              <p>Our barbers are experts when it comes to working on beards.</p>
             </div>
-            <div class="card">
+            <div class="card | padding-32 bg-primary-100 border-radius-1">
               <h3 class="ff-accent text-uppercase">Hair Coloring</h3>
+              <p>Expert color work to help you keep looking your best</p>
             </div>
-            <div class="card">
+            <div class="card | padding-32 bg-primary-100 border-radius-1">
               <h3 class="ff-accent text-uppercase">Kids</h3>
+              <p>
+                Bring your kids with you while you are there, we love working on
+                them too!
+              </p>
             </div>
-            <div class="card">
+            <div class="card | padding-32 bg-primary-100 border-radius-1">
               <h3 class="ff-accent text-uppercase">Products</h3>
+              <p>We carry a wide range of hair and beard products.</p>
             </div>
           </div>
 
@@ -123,13 +143,13 @@
           </div>
         </div>
       </section>
-      <section class="section | bg-primary-100 text-center">
-        <div class="container flow">
+      <section id="hours" class="section | bg-primary-100 text-center">
+        <div class="container flow" data-type="wide">
           <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">Hours</h2>
 
           <p>Open 7 days a week to serve your hair cutting needs</p>
 
-          <div class="even-columns">
+          <div class="even-columns justify-center">
             <div class="flex-group flex-col">
               <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
                 Mon
@@ -175,7 +195,7 @@
           </div>
         </div>
       </section>
-      <section class="section | bg-primary-200 text-center">
+      <section id="prices" class="section | bg-primary-200 text-center">
         <div class="container flow">
           <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
             Pricing
@@ -221,16 +241,104 @@
           </div>
         </div>
       </section>
-      <section class="section | bg-primary-100 text-center">
+      <section id="book" class="section | bg-primary-100">
         <div class="container flow">
-          <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
+          <h2
+            class="ff-accent fs-800 text-uppercase text-center clr-accent-400"
+          >
             Book an Appointment
           </h2>
-          <p>Please fill out the form below to book your appointment</p>
+          <p class="text-center">
+            Please fill out the form below to book your appointment
+          </p>
 
-          <div class="flex-group mx-auto">
-            <a href="#book" class="btn btn--accent">Book appointment</a>
-          </div>
+          <form
+            id="bookform"
+            class="form-content | flow"
+            data-spacing="large"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="success.html"
+          >
+            <div class="even-columns col-2">
+              <div>
+                <label class="margin-block-6" for="fname">Your name</label>
+                <input
+                  id="fname"
+                  name="fname"
+                  type="text"
+                  required
+                  placeholder="John Doe"
+                  pattern="[a-zA-Z]+"
+                  title="Your name can only contain alphabetical characters."
+                />
+              </div>
+
+              <div>
+                <label class="margin-block-6" for="email">E-mail address</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="johnny1999@gmail.com"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Wrong email."
+                />
+              </div>
+              <div>
+                <label class="margin-block-6" for="phone">Date</label>
+                <input id="phone" name="phone" type="date" required />
+              </div>
+              <div>
+                <label class="margin-block-6" for="phone">Phone number</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  required
+                  placeholder="555-555-5555"
+                  pattern="[0-9]+"
+                  title="The phone number can only contain numbers."
+                />
+              </div>
+              <div>
+                <label class="margin-block-6" for="phone">Select service</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  required
+                  placeholder="Hair Cut"
+                  pattern="[0-9]+"
+                  title="The phone number can only contain numbers."
+                />
+              </div>
+              <div>
+                <label class="margin-block-6" for="phone"
+                  >Barbers name <span class="fw-400">(optional)</span></label
+                >
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  required
+                  pattern="[0-9]+"
+                  title="The phone number can only contain numbers."
+                />
+              </div>
+            </div>
+            <button
+              id="submit"
+              type="submit"
+              form="bookform"
+              value="Submit"
+              class="submit btn btn--accent"
+            >
+              Book appointment
+            </button>
+          </form>
         </div>
       </section>
     </main>
