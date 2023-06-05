@@ -37,13 +37,10 @@
 
     <!-- *Font Awesome -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    <script
+      src="https://kit.fontawesome.com/cd6c1a3f7e.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
 
     <!-- *SCSS -->
 
@@ -256,17 +253,16 @@
             id="bookform"
             class="form-content | flow"
             data-spacing="large"
-            name="contact"
+            name="bookform"
             method="POST"
-            data-netlify="true"
             action="success.html"
           >
             <div class="even-columns col-2">
               <div>
-                <label class="margin-block-6" for="fname">Your name</label>
+                <label class="margin-block-6" for="name">Your name</label>
                 <input
-                  id="fname"
-                  name="fname"
+                  id="name"
+                  name="name"
                   type="text"
                   required
                   placeholder="John Doe"
@@ -288,8 +284,8 @@
                 />
               </div>
               <div>
-                <label class="margin-block-6" for="phone">Date</label>
-                <input id="phone" name="phone" type="date" required />
+                <label class="margin-block-6" for="date">Date</label>
+                <input id="date" name="date" type="date" required />
               </div>
               <div>
                 <label class="margin-block-6" for="phone">Phone number</label>
@@ -304,28 +300,26 @@
                 />
               </div>
               <div>
-                <label class="margin-block-6" for="phone">Select service</label>
+                <label class="margin-block-6" for="service"
+                  >Select service</label
+                >
                 <input
-                  id="phone"
-                  name="phone"
+                  id="service"
+                  name="service"
                   type="text"
                   required
                   placeholder="Hair Cut"
-                  pattern="[0-9]+"
-                  title="The phone number can only contain numbers."
                 />
               </div>
               <div>
-                <label class="margin-block-6" for="phone"
+                <label class="margin-block-6" for="barber-name"
                   >Barbers name <span class="fw-400">(optional)</span></label
                 >
                 <input
-                  id="phone"
-                  name="phone"
+                  id="barber-name"
+                  name="barber-name"
                   type="text"
                   required
-                  pattern="[0-9]+"
-                  title="The phone number can only contain numbers."
                 />
               </div>
             </div>
