@@ -68,23 +68,29 @@
     </header>
     <main>
       <section class="hero | text-center">
-        <div class="container flow" data-spacing="large" data-type="wide">
-          <h1 class="fs-900 ff-accent text-uppercase clr-accent-400">
-            The Barber Shop
-          </h1>
-          <p class="">
-            Established over a decade ago,
-            <span class="fw-700">The Barber Shop</span> is here to serve you're
-            hair needs, whatever they are. From a simple cut, a beard trim or a
-            hot towel shave, we're here to help you with.
-          </p>
+        <div
+          class="even-columns justify-center | container"
+          data-spacing="large"
+          data-type="wide"
+        >
+          <div class="flow align-self-center" data-spacing="large">
+            <h1 class="fs-900 ff-accent text-uppercase clr-accent-400">
+              The Barber Shop
+            </h1>
+            <p class="fs-500">
+              Established over a decade ago,
+              <span class="fw-700">The Barber Shop</span> is here to serve
+              you're hair needs, whatever they are. From a simple cut, a beard
+              trim or a hot towel shave, we're here to help you with.
+            </p>
 
-          <div class="flex-group mx-auto">
-            <a href="#book" class="btn btn--accent">Book appointment</a>
-            <a href="#prices" class="btn btn--primary">View Prices</a>
+            <div class="flex-group mx-auto">
+              <a href="#book" class="btn btn--accent">Book appointment</a>
+              <a href="#prices" class="btn btn--primary">View Prices</a>
+            </div>
           </div>
 
-          <picture class="flex-group mx-auto">
+          <picture>
             <source srcset="assets/hair-cut.webp" type="image/webp" />
             <img
               class="border-radius-1 box-shadow-2"
@@ -94,43 +100,48 @@
           </picture>
         </div>
       </section>
-      <section id="about-us" class="section | bg-primary-200 text-center">
-        <div class="container flow" data-type="wide">
-          <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
-            Our Services
-          </h2>
+      <section
+        id="about-us"
+        class="section about-us | bg-primary-200 text-center"
+      >
+        <div class="container" data-type="wide">
+          <header class="section-header">
+            <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
+              Our Services
+            </h2>
+          </header>
 
           <div class="even-columns col-3">
             <div class="card | padding-32 bg-primary-100 border-radius-1">
-              <h3 class="ff-accent text-uppercase">Hair Cutting</h3>
+              <h3 class="ff-accent fs-500 text-uppercase">Hair Cutting</h3>
               <p>
                 A quick clean up or a totally new style, we have you covered.
               </p>
             </div>
             <div class="card | padding-32 bg-primary-100 border-radius-1">
-              <h3 class="ff-accent text-uppercase">Hot Shaves</h3>
+              <h3 class="ff-accent fs-500 text-uppercase">Hot Shaves</h3>
               <p>
                 There is no better way to pamper yourself than to have a hot
                 shave.
               </p>
             </div>
             <div class="card | padding-32 bg-primary-100 border-radius-1">
-              <h3 class="ff-accent text-uppercase">Beard Cleanup</h3>
+              <h3 class="ff-accent fs-500 text-uppercase">Beard Cleanup</h3>
               <p>Our barbers are experts when it comes to working on beards.</p>
             </div>
             <div class="card | padding-32 bg-primary-100 border-radius-1">
-              <h3 class="ff-accent text-uppercase">Hair Coloring</h3>
+              <h3 class="ff-accent fs-500 text-uppercase">Hair Coloring</h3>
               <p>Expert color work to help you keep looking your best</p>
             </div>
             <div class="card | padding-32 bg-primary-100 border-radius-1">
-              <h3 class="ff-accent text-uppercase">Kids</h3>
+              <h3 class="ff-accent fs-500 text-uppercase">Kids</h3>
               <p>
                 Bring your kids with you while you are there, we love working on
                 them too!
               </p>
             </div>
             <div class="card | padding-32 bg-primary-100 border-radius-1">
-              <h3 class="ff-accent text-uppercase">Products</h3>
+              <h3 class="ff-accent fs-500 text-uppercase">Products</h3>
               <p>We carry a wide range of hair and beard products.</p>
             </div>
           </div>
@@ -142,9 +153,14 @@
       </section>
       <section id="hours" class="section | bg-primary-100 text-center">
         <div class="container flow" data-type="wide">
-          <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">Hours</h2>
-
-          <p>Open 7 days a week to serve your hair cutting needs</p>
+          <header class="section-header">
+            <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
+              Hours
+            </h2>
+            <p class="fs-500">
+              Open 7 days a week to serve your hair cutting needs
+            </p>
+          </header>
 
           <div class="even-columns justify-center">
             <div class="flex-group flex-col">
@@ -194,43 +210,45 @@
       </section>
       <section id="prices" class="section | bg-primary-200 text-center">
         <div class="container flow">
-          <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
-            Pricing
-          </h2>
+          <header class="section-header">
+            <h2 class="ff-accent fs-800 text-uppercase clr-accent-400">
+              Pricing
+            </h2>
+          </header>
 
           <div class="even-columns col-2 justify-center align-center">
             <div class="flex-group flex-col">
-              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
                 Adult Cut
               </h3>
               <p class="ff-accent fs-500 fw-700">$25</p>
             </div>
             <div class="flex-group flex-col">
-              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
                 Beard Trim
               </h3>
               <p class="ff-accent fs-500 fw-700">$25</p>
             </div>
             <div class="flex-group flex-col">
-              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
                 Kid Cut
               </h3>
               <p class="ff-accent fs-500 fw-700">$21</p>
             </div>
             <div class="flex-group flex-col">
-              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
                 Hot Towel Shave
               </h3>
               <p class="ff-accent fs-500 fw-700">$15</p>
             </div>
             <div class="flex-group flex-col">
-              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
                 Cut (jel) Wash
               </h3>
               <p class="ff-accent fs-500 fw-700">$35</p>
             </div>
             <div class="flex-group flex-col">
-              <h3 class="ff-accent fs-600 text-uppercase clr-primary-400">
+              <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
                 Head (jel) Beard
               </h3>
               <p class="ff-accent fs-500 fw-700">$45</p>
@@ -245,7 +263,7 @@
           >
             Book an Appointment
           </h2>
-          <p class="text-center">
+          <p class="fs-500 text-center">
             Please fill out the form below to book your appointment
           </p>
 
@@ -341,7 +359,7 @@
         <img class="logo mx-auto" src="assets/logo.svg" alt="barber logo" />
 
         <p>Here to serve your hair needs, whatever they might be</p>
-        <p class="ff-accent">514-555-1234</p>
+        <p class="ff-accent clr-accent-300">514-555-1234</p>
       </div>
       <button class="btn btn--scroll-top">
         <i class="fa-solid fa-square-caret-up"></i>

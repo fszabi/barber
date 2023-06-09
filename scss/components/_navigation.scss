@@ -12,12 +12,12 @@
     color: clr(neutral, 100);
     font: {
       family: $ff-accent;
-      size: fs(400);
+      size: fs(500);
     }
+    transition: color 250ms;
 
     &:is(:hover, :focus) {
-      opacity: .7;
-      text-decoration: underline;
+      color: clr(accent, 300);
     }
   }
 }

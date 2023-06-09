@@ -1,6 +1,19 @@
 @use "../abstracts/" as *;
 
 .hero {
+  --grid-gap: 2em;
+  
+
   background-color: clr(primary, 100);
   padding-block: size(32) * 5;
+
+  @include mqMin(medium) {
+    &.text-center {
+      text-align: left;
+    } 
+
+    .flex-group.mx-auto {
+      justify-content: left;
+    }
+  }
 }

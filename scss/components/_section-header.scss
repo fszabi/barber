@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.section-header {
+  margin-block-end: size(36) * 1.5;
+
+  p {
+    max-width: 50ch;
+    margin-top: size(12);
+
+    .text-center & {
+      margin-inline: auto;
+    }
+  }
+}

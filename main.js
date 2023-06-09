@@ -27,7 +27,7 @@ const scrollButtonObserver = new IntersectionObserver(
       document.documentElement.scrollTop = 0; // Firefox, Chrome, Opera
     }
   },
-  { rootMargin: "2000px 0px 0px 0px" }
+  { rootMargin: "1000px 0px 0px 0px" }
 );
 
 scrollButtonObserver.observe(scrollWatcher);

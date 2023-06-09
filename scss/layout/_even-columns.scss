@@ -13,8 +13,16 @@
     align-items: center;
   }
 
+  .align-self-center {
+    align-self: center;
+  }
+
   &.justify-center {
     justify-items: center;
+  }
+
+  .justify-self-center {
+    justify-self: center;
   }
 
   &.col-2 {

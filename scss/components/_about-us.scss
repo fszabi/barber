@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.about-us {
+  .flex-group {
+    margin-top: size(36) * 1.5;
+  }
+}
