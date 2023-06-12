@@ -243,13 +243,13 @@
             </div>
             <div class="flex-group flex-col">
               <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
-                Cut (jel) Wash
+                Cut & Wash
               </h3>
               <p class="ff-accent fs-500 fw-700">$35</p>
             </div>
             <div class="flex-group flex-col">
               <h3 class="ff-accent fs-700 text-uppercase clr-primary-400">
-                Head (jel) Beard
+                Head & Beard
               </h3>
               <p class="ff-accent fs-500 fw-700">$45</p>
             </div>
@@ -321,13 +321,21 @@
                 <label class="margin-block-6" for="service"
                   >Select service</label
                 >
-                <input
+                <select id="service" name="service" required>
+                  <option value="adultcut">Adult Cut - $25</option>
+                  <option value="beardtrim">Beard Trim - $25</option>
+                  <option value="kidcut">Kid Cut - $21</option>
+                  <option value="hottowelshave">Hot Towel Shave - $15</option>
+                  <option value="cutandwash">Cut & Wash - $35</option>
+                  <option value="headandbeard">Head & Beard - $45</option>
+                </select>
+                <!-- <input
                   id="service"
                   name="service"
                   type="text"
                   required
                   placeholder="Hair Cut"
-                />
+                /> -->
               </div>
               <div>
                 <label class="margin-block-6" for="barber-name"
