@@ -12,8 +12,9 @@
   background-color: clr(primary, 900);
 
   .container.flex-group {
-    justify-content: center;
-    align-items: center;
+    @include mqMax(medium) {
+      justify-content: center;
+    }
   }
 }
 
